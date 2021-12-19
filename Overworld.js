@@ -11,6 +11,51 @@ class Overworld {
        image.onload = () => {
            this.ctx.drawImage(image, 0, 0);
        };
-       image.src = "/images/maps/DemoLower.png"
-    }
+       image.src = "/images/maps/DemoLower.png";
+
+       const x = 5;
+       const y = 6;
+
+
+       const shadow = new Image();
+       shadow.onload = () => {
+
+           this.ctx.drawImage(
+               shadow,
+               0, //Left Crop
+               0, //Right Crop
+               32, //Width of Cut
+               32, // Height of Cut
+               x * 16 -8,
+               y * 16 - 18,
+               32,
+               32
+
+           )
+
+       }
+       shadow.src = "/images/characters/shadow.png";
+
+
+       const hero = new Image();
+       hero.onload = () => {
+           //Draw the hero
+
+           this.ctx.drawImage(
+               hero,
+               0, //Left Crop
+               0, //Right Crop
+               32, //Width of Cut
+               32, // Height of Cut
+               x * 16 -8,
+               y * 16 - 18,
+               32,
+               32
+
+           )
+
+       }
+
+       hero.src = "/images/characters/people/hero.png";
+    };
 }
