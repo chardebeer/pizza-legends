@@ -10,12 +10,12 @@ class OverworldMap {
         this.upperImage.src = config.upperSrc;
     }
 
-    drawLowerImage(ctx){
+    drawLowerImage(ctx) {
         ctx.drawImage(this.lowerImage, 0, 0);
 
     }
 
-    drawUpperImage(ctx){
+    drawUpperImage(ctx) {
         ctx.drawImage(this.upperImage, 0, 0);
 
     }
@@ -32,11 +32,11 @@ window.OverworldMap = {
                 y: utils.widthGrid(6),
             }),
 
-            npc1: new Person({
+        /*    npc1: new Person({
                 x: utils.widthGrid(7),
                 y: utils.widthGrid(8),
                 src: "/images/characters/people/npc1.png"
-            })
+            })*/
 
 
         }
@@ -51,7 +51,7 @@ window.OverworldMap = {
                 x: 3,
                 y: 5,
             }),
-            npcA: new GameObject({
+ /*           npcA: new GameObject({
                 x: 9,
                 y: 7,
                 src: "/images/characters/people/npc2.png"
@@ -61,8 +61,7 @@ window.OverworldMap = {
                 y: 4,
                 src: "/images/characters/people/npc3.png"
             })
+        */
         }
-
-
     },
 }
