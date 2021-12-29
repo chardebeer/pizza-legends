@@ -32,11 +32,11 @@ window.OverworldMap = {
                 y: utils.widthGrid(6),
             }),
 
-        /*    npc1: new Person({
+            npc1: new Person({
                 x: utils.widthGrid(7),
                 y: utils.widthGrid(8),
                 src: "/images/characters/people/npc1.png"
-            })*/
+            })
 
 
         }

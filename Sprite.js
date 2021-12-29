@@ -34,7 +34,7 @@ class Sprite {
 
         }
 
-        this.currentAnimation = "walk-up"// config.currentAnimation || "idle-down";
+        this.currentAnimation =  config.currentAnimation || "idle-down";
         this.currentAnimationFrame = 0 ;
 
         this.animationFrameLimit = config.animationFrameLimit || 4;
